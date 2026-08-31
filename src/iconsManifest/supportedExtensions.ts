@@ -4170,6 +4170,27 @@ export const extensions: IFileCollection = {
       format: FileFormat.svg,
     },
     {
+      icon: 'nitro',
+      extensions: ['.nitrorc'],
+      filenamesGlob: ['nitro', 'nitro.config'],
+      extensionsGlob: [
+        'js',
+        'ts',
+        'mjs',
+        'cjs',
+        'mts',
+        'cts',
+        'json',
+        'jsonc',
+        'json5',
+        'yaml',
+        'yml',
+        'toml',
+      ],
+      filename: true,
+      format: FileFormat.svg,
+    },
+    {
       icon: 'noc',
       extensions: ['noc'],
       format: FileFormat.svg,
@@ -4916,6 +4937,13 @@ export const extensions: IFileCollection = {
       icon: 'precommit',
       extensions: ['.pre-commit-config.yaml'],
       filename: true,
+      format: FileFormat.svg,
+    },
+    {
+      icon: 'prefect',
+      extensions: ['prefect.toml'],
+      filename: true,
+      light: true,
       format: FileFormat.svg,
     },
     {
@@ -5998,7 +6026,7 @@ export const extensions: IFileCollection = {
     },
     {
       icon: 'swift',
-      extensions: ['package.pins'],
+      extensions: ['package.pins', '.swift-version'],
       filename: true,
       languages: [languages.swift],
       format: FileFormat.svg,
@@ -6870,6 +6898,12 @@ export const extensions: IFileCollection = {
       format: FileFormat.svg,
     },
     {
+      icon: 'werf',
+      extensions: ['werf.yaml', 'werf-giterminism.yaml', 'werf-includes.yaml'],
+      filename: true,
+      format: FileFormat.svg,
+    },
+    {
       icon: 'wesl',
       extensions: [],
       languages: [languages.wesl],
@@ -6942,6 +6976,12 @@ export const extensions: IFileCollection = {
       format: FileFormat.svg,
     },
     { icon: 'xcode', extensions: ['xcodeproj'], format: FileFormat.svg },
+    {
+      icon: 'xcode',
+      extensions: ['.xcode-version'],
+      filename: true,
+      format: FileFormat.svg,
+    },
     {
       icon: 'xfl',
       extensions: ['xfl'],
